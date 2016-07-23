@@ -6,6 +6,18 @@ var url = 'https://na-georss.waze.com/rtserver/web/TGeoRSS?tk=ccp_partner&ccp_pa
 $(document).ready(function () {
   
   var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+  var geojsonFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "Coors Field",
+        "amenity": "Baseball Stadium",
+        "popupContent": "This is where the Rockies play!"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-104.99404, 39.75621]
+    }
+  };
   
   $.ajax(url, {
     
