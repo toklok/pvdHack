@@ -25,6 +25,8 @@
   "dependencies": {
     "extract-text-webpack-plugin": "^1.0.1",
     "jquery": "^3.1.0",
+    "leaflet": "^0.7.7",
+    "leaflet-map": "^0.2.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
