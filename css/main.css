@@ -22,6 +22,12 @@ span {
 #link {
     float: right;
 }
+#info{
+	width: 200px;
+}
+#map {
+	float: right;
+}
 
 .main {
     padding: 10px;
