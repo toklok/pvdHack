@@ -19,6 +19,8 @@ $(document).ready(function () {
     }
   };
   
+  L.geoJson(geojsonFeature).addTo(map);
+  
   $.ajax(url, {
     
     success: function (data) {
