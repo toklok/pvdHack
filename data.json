@@ -1,0 +1,188 @@
+{
+  "alerts": [{
+    "country": "US",
+    "city": "Providence, RI",
+    "reportRating": 0,
+    "confidence": 0,
+    "reliability": 6,
+    "type": "ROAD_CLOSED",
+    "uuid": "b62fa3d4-6056-3add-a5d7-43f7fde4eaa8",
+    "magvar": 0,
+    "subtype": "ROAD_CLOSED_EVENT",
+    "street": "Dean St",
+    "reportDescription": "Bridge Replacement",
+    "location": {
+      "x": -71.426509,
+      "y": 41.828834
+    },
+    "pubMillis": 1467478414127
+  }, {
+    "country": "US",
+    "city": "Providence, RI",
+    "reportRating": 0,
+    "confidence": 2,
+    "reliability": 10,
+    "type": "ROAD_CLOSED",
+    "uuid": "16e854d7-1248-3d25-85b2-cf5636a672b2",
+    "magvar": 0,
+    "subtype": "ROAD_CLOSED_EVENT",
+    "street": "Promenade St",
+    "reportDescription": "Detour for Pleasant Valley Pkwy Bridge",
+    "location": {
+      "x": -71.429893,
+      "y": 41.829638
+    },
+    "pubMillis": 1465901327072
+  }, {
+    "country": "US",
+    "city": "Providence, RI",
+    "reportRating": 0,
+    "confidence": 0,
+    "reliability": 6,
+    "type": "ROAD_CLOSED",
+    "uuid": "1d8f8d11-ad89-3d64-8f0d-1e7fb671cc3e",
+    "magvar": 0,
+    "subtype": "ROAD_CLOSED_EVENT",
+    "street": "Dean St",
+    "reportDescription": "Bridge Replacement",
+    "location": {
+      "x": -71.42666,
+      "y": 41.82927
+    },
+    "pubMillis": 1468890854441
+  }, {
+    "country": "US",
+    "magvar": 0,
+    "subtype": "ROAD_CLOSED_EVENT",
+    "city": "Providence, RI",
+    "reportRating": 0,
+    "confidence": 1,
+    "reliability": 9,
+    "reportDescription": "Detour for Pleasant Valley Pkwy Bridge",
+    "location": {
+      "x": -71.423161,
+      "y": 41.829231
+    },
+    "type": "ROAD_CLOSED",
+    "uuid": "02945bc1-f1fd-385f-b133-614506bcfca4",
+    "pubMillis": 1467608587662
+  }, {
+    "country": "US",
+    "city": "Providence, RI",
+    "reportRating": 0,
+    "confidence": 1,
+    "reliability": 9,
+    "type": "ROAD_CLOSED",
+    "uuid": "ebfafcad-4fa5-317e-ad9c-b8039f9ea826",
+    "magvar": 0,
+    "subtype": "ROAD_CLOSED_EVENT",
+    "street": "Acorn St",
+    "reportDescription": "Detour for Pleasant Valley Pkwy Bridge",
+    "location": {
+      "x": -71.428548,
+      "y": 41.828426
+    },
+    "pubMillis": 1467608589953
+  }, {
+    "country": "US",
+    "roadType": 4,
+    "magvar": 201,
+    "subtype": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "city": "Cranston, RI",
+    "reportRating": 3,
+    "confidence": 0,
+    "reliability": 5,
+    "location": {
+      "x": -71.424787,
+      "y": 41.781641
+    },
+    "type": "WEATHERHAZARD",
+    "uuid": "bd3cff84-51aa-387e-95c7-8ab69a2ff82a",
+    "pubMillis": 1469296523956
+  }, {
+    "country": "US",
+    "city": "Providence, RI",
+    "reportRating": 2,
+    "confidence": 0,
+    "reliability": 5,
+    "type": "WEATHERHAZARD",
+    "uuid": "18bf87b0-8ec8-3c97-bcec-37036d08f8f5",
+    "roadType": 6,
+    "magvar": 296,
+    "subtype": "HAZARD_ON_ROAD_POT_HOLE",
+    "street": "Smithfield Ave",
+    "location": {
+      "x": -71.403363,
+      "y": 41.85416
+    },
+    "pubMillis": 1469296993298
+  }, {
+    "country": "US",
+    "city": "Providence, RI",
+    "reportRating": 3,
+    "confidence": 1,
+    "reliability": 10,
+    "type": "WEATHERHAZARD",
+    "uuid": "2523013a-3448-331e-bb69-60a20638d9ad",
+    "roadType": 3,
+    "magvar": 346,
+    "subtype": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "street": "I-95 N",
+    "location": {
+      "x": -71.404475,
+      "y": 41.805374
+    },
+    "pubMillis": 1469296183775
+  }, {
+    "country": "US",
+    "city": "Providence, RI",
+    "reportRating": 0,
+    "confidence": 5,
+    "reliability": 10,
+    "type": "WEATHERHAZARD",
+    "uuid": "e010b105-30c0-30d4-96db-d3abd11b5b0a",
+    "roadType": 3,
+    "magvar": 270,
+    "subtype": "",
+    "street": "I-195 E",
+    "reportDescription": "Lane closed: Construction on I-195 EB at India St. Drive with caution.",
+    "location": {
+      "x": -71.399669306823,
+      "y": 41.816456701715
+    },
+    "pubMillis": 1464753600000
+  }, {
+    "country": "US",
+    "city": "Providence, RI",
+    "reportRating": 2,
+    "confidence": 2,
+    "reliability": 10,
+    "type": "ACCIDENT",
+    "uuid": "04a8ac50-55e3-3aef-a493-67ed6bae644c",
+    "roadType": 3,
+    "magvar": 0,
+    "subtype": "ACCIDENT_MINOR",
+    "street": "I-95 N",
+    "location": {
+      "x": -71.405008,
+      "y": 41.807092
+    },
+    "pubMillis": 1469295494565
+  }, {
+    "country": "US",
+    "roadType": 3,
+    "magvar": 253,
+    "subtype": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "street": "US-6 W",
+    "reportRating": 2,
+    "confidence": 1,
+    "reliability": 9,
+    "location": {
+      "x": -71.431226,
+      "y": 41.82496
+    },
+    "type": "WEATHERHAZARD",
+    "uuid": "ee3215c1-06aa-3065-9eec-b5bf03189c78",
+    "pubMillis": 1469295511010
+  }]
+}

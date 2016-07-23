@@ -1,7 +1,16 @@
+html {
+
+}
+
 body {
     background-color: grey;
 }
 
 h1 {
     color: black;
+}
+
+.pk-header {
+    height: 120px;
+    background-color: white;
 }
