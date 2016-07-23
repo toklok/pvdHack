@@ -4,7 +4,8 @@
   "description": "A Hackathon project for Tech/Hire",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack-server": "webpack-dev-server --watch",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",

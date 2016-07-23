@@ -8,4 +8,5 @@ INSTALL
 + npm install -g webpack-dev-server
 + npm install
 
-+ and then in Terminal type webpack-dev-server to continuous development.
++ npm start
++ npm watch

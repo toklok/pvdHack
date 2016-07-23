@@ -9,11 +9,6 @@ var markerArray = [];
 L.Icon.Default.imagePath = './images';
 
 $(document).ready(function () {
-  
-  $("#click").click(function () {
-    $(".about").slideDown();
-  });
-  
   var map = L.map('mapid').setView([41.8240, -71.4128], 12);
   
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
