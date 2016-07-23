@@ -21,6 +21,14 @@ $(document).ready(function () {
   
   L.geoJson(geojsonFeature).addTo(map);
   
+  var myPoints = [{
+    "type": "Point",
+    "coordinates": [-104.99404, 39.75621]
+}, {
+    "type": "Point",
+    "coordinates": [-104.99404, 39.75234]
+}];
+  
   $.ajax(url, {
     
     success: function (data) {
