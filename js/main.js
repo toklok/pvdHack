@@ -1,24 +1,62 @@
-var $ = require('jquery');
-var L = require('leaflet');
-var leafletMap = require('leaflet-map');
+var $ = require('jquery'),
+L = require('leaflet'),
+wards = require('json!./geojson.json');
 
-var url = 'https://na-georss.waze.com/rtserver/web/TGeoRSS?tk=ccp_partner&ccp_partner_name=Providence&format=JSON&types=traffic,alerts,irregularities&polygon=-71.440487,41.866467;-71.374741,41.858029;-71.375427,41.828744;-71.395512,41.810450;-71.373367,41.785033;-71.405811,41.764486;-71.445465,41.786057;-71.446238,41.801095;-71.489410,41.817281;-71.440487,41.866467;-71.440487,41.866467';
 var dataJSON = 'data.json';
 
-var myArray = [];
+var markerArray = [];
 
-var map = L.map('mapid').setView([51.505, -0.09], 13);
-
+L.Icon.Default.imagePath = './images';
 
 $(document).ready(function () {
+  
+  $("#click").click(function () {
+    $(".about").slideDown();
+  });
+  
+  var map = L.map('mapid').setView([41.8240, -71.4128], 12);
+  
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+  
+  addMarker = function () {
+    
+    for (var j = 0; j < markerArray.length; j++) {
+      
+      marker = new L.marker([markerArray[j].long, markerArray[j].lat])
+      .addTo(map);
+    }
+    
+    var providenceLayer = L.geoJson().addTo(map);
+    providenceLayer.addData(wards);
+  };
+  
+  function pushData(data) {
+    for (var i = 0; i < data.alerts.length; i++) {
+      var d = data.alerts[i];
+      if (d.type === "ROAD_CLOSED") {
+        var street = (d.street !== undefined) ? d.street : "Not Available";
+        
+        markerArray.push({
+          lat: d.location.x,
+          long: d.location.y,
+          street: street,
+          subtype: d.subtype,
+          type: d.type,
+          reliability: d.reliability
+        });
+      }
+      addMarker();
+    }
+  }
+  
   $.ajax(dataJSON, {
     success: function (data) {
-      myArray.push(data);
-      console.log(data);
-      console.log(myArray[0]);
+      pushData(data);
     },
     error: function (err) {
       console.log('oh noes');
     }
-  })
+  });
 });

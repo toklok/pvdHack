@@ -1,52 +1,10 @@
-body, a {
-    font-family: 'Indie Flower', cursive;
-    text-decoration: none;
-    color: black;
-    font-size: 22pt;
+html {
+    height: 100%;
+    width: 100%;
 }
 
-span {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.nav {
-    background-color: #5DA7AE;
-}
-
-#container {
-    width: 768px;
-    margin: 0 auto;
-}
-
-#link {
-    float: right;
-}
-#info{
-	width: 200px;
-}
-#map {
-	float: right;
-}
-
-.main {
-    padding: 10px;
-}
-
-.about {
-    display: none;
-}
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-.pk-header {
-    height: 120px;
-    background-color: white;
-}
-=======
 #mapid {
-    height: 180px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
->>>>>>> 4fafce21fc5fadd211e65d12042c5016c0e54d7a
->>>>>>> origin/master
