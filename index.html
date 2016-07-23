@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>PVD Pothole Killers</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>PVD Pothole Killers</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="application/javascript">
+        $(function() {
+            $("#click").click(function () {
+                $(".about").slideDown();
+            })
+        });
+    </script>
+    <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-<div class="container">
-<div class="nav">
-</div>
-<div class="main">
-</div>
-<div class="about">
-</div>
+<div id="container">
+    <div class="nav">
+        <span class="head">PVD Pothole Killer</span><span id="link"><a id="click" href="#">About</a></span>
+    </div>
+    <div class="main">
+    </div>
+    <div class="about">
+        <span class="head">About</span>
+    </div>
 </div>
 </body>
 </html>
+
