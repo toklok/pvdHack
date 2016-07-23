@@ -1,0 +1,28 @@
+{
+  "name": "pvd-hack",
+  "version": "0.0.1",
+  "description": "A Hackathon project for Tech/Hire",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toklok/pvdHack.git"
+  },
+  "keywords": [
+    "dataset",
+    "providence",
+    "ri",
+    "hackathon"
+  ],
+  "author": "thekayness, modus, nerney, toklok, wendyr21",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toklok/pvdHack/issues"
+  },
+  "homepage": "https://github.com/toklok/pvdHack#readme",
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
