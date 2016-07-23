@@ -184,5 +184,23 @@
     "type": "WEATHERHAZARD",
     "uuid": "ee3215c1-06aa-3065-9eec-b5bf03189c78",
     "pubMillis": 1469295511010
-  }]
+  },
+    {
+      "country": "US",
+      "city": "Providence, RI",
+      "reportRating": 2,
+      "confidence": 0,
+      "reliability": 5,
+      "type": "WEATHERHAZARD",
+      "uuid": "18bf87b0-8ec8-3c97-bcec-37036d08f8f5",
+      "roadType": 6,
+      "magvar": 296,
+      "subtype": "HAZARD_ON_ROAD_POT_HOLE",
+      "street": "Smithfield Ave",
+      "location": {
+        "x": -71.403363,
+        "y": 41.85416
+      },
+      "pubMillis": 1469296993298
+    }]
 }
