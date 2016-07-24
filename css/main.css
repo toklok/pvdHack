@@ -1,12 +1,11 @@
 html {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
     height: 100%;
     width: 100%;
 }
 
 #top {
-	margin-left: 20px;
-	margin-top: 10px;
+	margin: 10 10 10 10;
 }
 
 #mapid {
