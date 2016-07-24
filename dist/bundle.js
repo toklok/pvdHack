@@ -44,6 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+console.log('works');
 	'use strict';
 
 	var $ = __webpack_require__(1);
