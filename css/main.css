@@ -3,6 +3,10 @@ html {
     width: 100%;
 }
 
+h1 {
+    padding: 10px;
+}
+
 #mapid {
     position: absolute;
     width: 100%;
