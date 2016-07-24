@@ -1,37 +1,36 @@
-var $ = require('jquery'),
-L = require('leaflet'),
-wards = require('json!./geojson.json');
+const $ = require('jquery');
+const L = require('leaflet');
+const wards = require('json!./geojson.json');
+const dataJSON = 'data.json';
+const images = L.Icon.Default.imagePath = './images';
+const markerArray = [];
 
-var dataJSON = 'data.json';
-
-var markerArray = [];
-
-L.Icon.Default.imagePath = './images';
 
 $(document).ready(function () {
-  var map = L.map('mapid').setView([41.8240, -71.4128], 12);
+  let map = L.map('mapid').setView([41.8240, -71.4128], 13);
   
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
   
-  addMarker = function () {
+  let addMarker = () => {
     
-    for (var j = 0; j < markerArray.length; j++) {
+    for (let j = 0; j < markerArray.length; j++) {
       
-      marker = new L.marker([markerArray[j].long, markerArray[j].lat])
-      .addTo(map);
+      marker = new L.marker([markerArray[j].long, markerArray[j].lat]);
+      marker.bindPopup("<b>Hello world!</b><br />I am a popup.");
+      map.addLayer(marker);
     }
     
     var providenceLayer = L.geoJson().addTo(map);
     providenceLayer.addData(wards);
-  };
+  }
   
   function pushData(data) {
-    for (var i = 0; i < data.alerts.length; i++) {
-      var d = data.alerts[i];
+    for (let i = 0; i < data.alerts.length; i++) {
+      let d = data.alerts[i];
       if (d.type === "ROAD_CLOSED") {
-        var street = (d.street !== undefined) ? d.street : "Not Available";
+        let street = (d.street !== undefined) ? d.street : "Not Available";
         
         markerArray.push({
           lat: d.location.x,
