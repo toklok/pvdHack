@@ -22,9 +22,9 @@ $(document).ready(function () {
       map.addLayer(marker);
     }
     
-    var providenceLayer = L.geoJson().addTo(map);
+    let providenceLayer = L.geoJson().addTo(map);
     providenceLayer.addData(wards);
-  }
+  };
   
   function pushData(data) {
     for (let i = 0; i < data.alerts.length; i++) {
