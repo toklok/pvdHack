@@ -8,7 +8,7 @@ const markerArray = [];
 
 
 $(document).ready(function () {
-  let map = L.map('mapid').setView([41.8240, -71.4128], 13);
+  const map = L.map('mapid').setView([41.8240, -71.4128], 13);
   
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -18,7 +18,7 @@ $(document).ready(function () {
     
     for (let j = 0; j < markerArray.length; j++) {
       
-      marker = new L.marker([markerArray[j].long, markerArray[j].lat]);
+      let marker = new L.marker([markerArray[j].long, markerArray[j].lat]);
       marker.bindPopup("<b>Hello world!</b><br />I am a popup.");
       map.addLayer(marker);
     }
@@ -54,4 +54,15 @@ $(document).ready(function () {
       console.log('oh noes');
     }
   });
+  
+  $('#button').on('click', function () {
+    $.ajax('http://localhost:3002/test', {
+      success: function (data) {
+        console.log('here is the data ' + data);
+      },
+      error: function (err) {
+        console.log('oh noes ' + err);
+      }
+    })
+  })
 });
