@@ -1,6 +1,7 @@
-const $ = require('jquery');
-const L = require('leaflet');
-const wards = require('json!./geojson.json');
+import $ from 'jquery';
+import L from 'leaflet';
+import wards from 'json!./geojson.json';
+
 const dataJSON = 'data.json';
 const images = L.Icon.Default.imagePath = './images';
 const markerArray = [];
