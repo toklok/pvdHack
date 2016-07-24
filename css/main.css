@@ -8,3 +8,21 @@ html {
     width: 100%;
     height: 100%;
 }
+
+.dataFloat {
+    color: black;
+    font-size: 11px;
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(191, 183, 183, 0.61);
+    color: black;
+    width: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 150px;
+}
+
+.dataFloat li {
+	list-style-type: none;
+	padding-bottom: 10px;
+}

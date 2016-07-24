@@ -17,22 +17,42 @@ $(document).ready(function () {
     
     for (let j = 0; j < markerArray.length; j++) {
       
-      marker = new L.marker([markerArray[j].long, markerArray[j].lat]);
-      marker.bindPopup("<b>Hello world!</b><br />I am a popup.");
+     let marker = new L.marker([markerArray[j].long, markerArray[j].lat]);
       map.addLayer(marker);
     }
     
-    let providenceLayer = L.geoJson().addTo(map);
-    providenceLayer.addData(wards);
-  };
-  
+      var myStyle = {
+        "fillColor": "#00B4FF",
+        "weight": 1.5,
+        "fillOpacity": 0.1
+    };
+    L.geoJson(wards,{
+    style: myStyle
+    }).addTo(map)
+    //var providenceLayer = L.geoJson().addTo(map);
+    //providenceLayer.addData(wards);
+
+  }
+function formatD(){
+  let msg = "<ul>"
+  for(var i = 0; i< markerArray.length; i++){
+    msg = msg + "<li>" + markerArray[i].dateTime 
+    msg = msg + " Location: " + markerArray[i].street 
+    msg = msg + " - " + markerArray[i].type +"</li>"  
+  }
+  msg = msg + "</div>";
+  $('.dataFloat').append(msg);
+  }
+
   function pushData(data) {
     for (let i = 0; i < data.alerts.length; i++) {
       let d = data.alerts[i];
-      if (d.type === "ROAD_CLOSED") {
+      if (d.type === "ROAD_CLOSED" || 1 ===1) {
         let street = (d.street !== undefined) ? d.street : "Not Available";
+        let dt = new Date(d.pubMillis);
         
         markerArray.push({
+          dateTime : dt,
           lat: d.location.x,
           long: d.location.y,
           street: street,
@@ -41,16 +61,17 @@ $(document).ready(function () {
           reliability: d.reliability
         });
       }
+     
       addMarker();
+     
+      
     }
+     formatD();
   }
-  
-  $.ajax(dataJSON, {
-    success: function (data) {
-      pushData(data);
-    },
-    error: function (err) {
-      console.log('oh noes');
-    }
+  $.getJSON( dataJSON, {
+    format: "JSON"
+})
+  .done(function (data) {
+    pushData(data);
   });
 });

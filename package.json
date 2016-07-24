@@ -32,13 +32,13 @@
     "mysql": "^2.11.1"
   },
   "devDependencies": {
-    "css-loader": "^0.23.1",
-    "style-loader": "^0.13.1",
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
     "babel-plugin-syntax-flow": "^6.1.18",
     "babel-plugin-transform-flow-strip-types": "^6.1.18",
-    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }
