@@ -1,11 +1,12 @@
 html {
-    font-family: 'Open Sans', sans-serif;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
     height: 100%;
     width: 100%;
 }
 
-h1 {
-    padding: 10px;
+#top {
+	margin-left: 20px;
+	margin-top: 10px;
 }
 
 #mapid {
